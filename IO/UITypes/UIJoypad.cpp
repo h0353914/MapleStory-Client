@@ -25,7 +25,7 @@
 
 namespace ms
 {
-	// TODO: Add combo boxes nl::nx::ui["Basic.img"]["ComboBox"] / ["ComboBox5"];
+	// TODO: Add combo boxes nl::nx::UI_000["Basic.img"]["ComboBox"] / ["ComboBox5"];
 	UIJoypad::UIJoypad() : UIDragElement<PosJOYPAD>()
 	{
 		alternative_settings = false; // TODO: Get user's key settings type
