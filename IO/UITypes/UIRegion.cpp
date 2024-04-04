@@ -31,7 +31,7 @@ namespace ms
 {
 	UIRegion::UIRegion() : UIElement(Point<int16_t>(0, 0), Point<int16_t>(800, 600))
 	{
-		nl::node Gateway = nl::nx::UI["Gateway.img"]["WorldSelect"];
+		nl::node Gateway = nl::nx::UI_000["Gateway.img"]["WorldSelect"];
 		nl::node na = Gateway["BtButton0"];
 		nl::node eu = Gateway["BtButton1"];
 
@@ -43,7 +43,7 @@ namespace ms
 
 		buttons[Buttons::NA] = std::make_unique<MapleButton>(na, na_pos);
 		buttons[Buttons::EU] = std::make_unique<MapleButton>(eu, eu_pos);
-		buttons[Buttons::EXIT] = std::make_unique<MapleButton>(nl::nx::UI["Login.img"]["Common"]["BtExit"]);
+		buttons[Buttons::EXIT] = std::make_unique<MapleButton>(nl::nx::UI_001["Login.img"]["Common"]["BtExit"]);
 
 		Point<int16_t> na_dim = Texture(na["normal"]["0"]).get_dimensions();
 		Point<int16_t> eu_dim = Texture(eu["normal"]["0"]).get_dimensions();

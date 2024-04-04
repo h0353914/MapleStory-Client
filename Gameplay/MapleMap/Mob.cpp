@@ -74,7 +74,7 @@ namespace ms
 
 		name = nl::nx::String["Mob.img"][std::to_string(mid)]["name"];
 
-		nl::node sndsrc = nl::nx::Sound["Mob.img"][strid];
+		nl::node sndsrc = nl::nx::Sound_023["Mob.img"][strid];
 
 		hitsound = sndsrc["Damage"];
 		diesound = sndsrc["Die"];

@@ -45,7 +45,7 @@ namespace ms
 		animations[Stance::FLY] = src["fly"];
 		animations[Stance::HANG] = src["hang"];
 
-		nl::node effsrc = nl::nx::Effect["PetEff.img"][strid];
+		nl::node effsrc = nl::nx::Effect_020["PetEff.img"][strid];
 
 		animations[Stance::WARP] = effsrc["warp"];
 	}

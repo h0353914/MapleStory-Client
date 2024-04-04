@@ -74,7 +74,7 @@ namespace ms
 		if (!BASS_Init(-1, 44100, 0, nullptr, 0))
 			return Error::Code::AUDIO;
 
-		nl::node uisrc = nl::nx::Sound["UI.img"];
+		nl::node uisrc = nl::nx::Sound_032["UI.img"];
 
 		add_sound(Sound::Name::BUTTONCLICK, uisrc["BtMouseClick"]);
 		add_sound(Sound::Name::BUTTONOVER, uisrc["BtMouseOver"]);
@@ -92,7 +92,7 @@ namespace ms
 		add_sound(Sound::Name::WORLDMAPOPEN, uisrc["WorldmapOpen"]);
 		add_sound(Sound::Name::WORLDMAPCLOSE, uisrc["WorldmapClose"]);
 
-		nl::node gamesrc = nl::nx::Sound["Game.img"];
+		nl::node gamesrc = nl::nx::Sound_022["Game.img"];
 
 		add_sound(Sound::Name::GAMESTART, gamesrc["GameIn"]);
 		add_sound(Sound::Name::JUMP, gamesrc["Jump"]);
@@ -102,7 +102,7 @@ namespace ms
 		add_sound(Sound::Name::LEVELUP, gamesrc["LevelUp"]);
 		add_sound(Sound::Name::TOMBSTONE, gamesrc["Tombstone"]);
 
-		nl::node itemsrc = nl::nx::Sound["Item.img"];
+		nl::node itemsrc = nl::nx::Sound_022["Item.img"];
 
 		for (auto node : itemsrc)
 			add_sound(node.name(), node["Use"]);
@@ -198,7 +198,7 @@ namespace ms
 		if (path == bgmpath)
 			return;
 
-		nl::audio ad = nl::nx::Sound002.resolve(path);
+		nl::audio ad = nl::nx::Sound_014.resolve(path);
 		auto data = reinterpret_cast<const void*>(ad.data());
 
 		if (data)
@@ -224,7 +224,7 @@ namespace ms
 		if (path == bgmpath)
 			return;
 
-		nl::audio ad = nl::nx::Sound002.resolve(path);
+		nl::audio ad = nl::nx::Sound_020.resolve(path);
 		auto data = reinterpret_cast<const void*>(ad.data());
 
 		if (data)

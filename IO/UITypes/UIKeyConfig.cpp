@@ -39,7 +39,7 @@ namespace ms
 		keyboard = &UI::get().get_keyboard();
 		staged_mappings = keyboard->get_maplekeys();
 
-		nl::node KeyConfig = nl::nx::UI["StatusBar3.img"]["KeyConfig"];
+		nl::node KeyConfig = nl::nx::UI_002["StatusBar3.img"]["KeyConfig"];
 
 		icon = KeyConfig["icon"];
 		key = KeyConfig["key"];
@@ -52,7 +52,7 @@ namespace ms
 		sprites.emplace_back(KeyConfig["backgrnd2"]);
 		sprites.emplace_back(KeyConfig["backgrnd3"]);
 
-		nl::node BtClose3 = nl::nx::UI["Basic.img"]["BtClose3"];
+		nl::node BtClose3 = nl::nx::UI_000["Basic.img"]["BtClose3"];
 		buttons[Buttons::CLOSE] = std::make_unique<MapleButton>(BtClose3, Point<int16_t>(bg_dimensions.x() - 18, 3));
 		buttons[Buttons::CANCEL] = std::make_unique<MapleButton>(KeyConfig["button:Cancel"]);
 		buttons[Buttons::DEFAULT] = std::make_unique<MapleButton>(KeyConfig["button:Default"]);

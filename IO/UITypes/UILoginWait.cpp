@@ -31,7 +31,7 @@ namespace ms
 
 	UILoginWait::UILoginWait(std::function<void()> okhandler) : okhandler(okhandler)
 	{
-		nl::node Loading = nl::nx::UI["Login.img"]["Notice"]["Loading"];
+		nl::node Loading = nl::nx::UI_001["Login.img"]["Notice"]["Loading"];
 		nl::node backgrnd = Loading["backgrnd"];
 
 		sprites.emplace_back(backgrnd, Point<int16_t>(112, 84));

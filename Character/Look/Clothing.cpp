@@ -82,7 +82,7 @@ namespace ms
 
 		std::string strid = "0" + std::to_string(itemid);
 		std::string category = equipdata.get_itemdata().get_category();
-		nl::node src = nl::nx::Character[category][strid + ".img"];
+		nl::node src = nl::nx::Character_000[category][strid + ".img"];
 		nl::node info = src["info"];
 
 		vslot = info["vslot"];

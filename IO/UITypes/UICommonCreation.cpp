@@ -46,7 +46,7 @@ namespace ms
 		std::string version_text = Configuration::get().get_version();
 		version = Text(Text::Font::A12B, Text::Alignment::LEFT, Color::Name::LEMONGRASS, "Ver. " + version_text);
 
-		nl::node Login = nl::nx::UI["Login.img"];
+		nl::node Login = nl::nx::UI_001["Login.img"];
 		nl::node Common = Login["Common"];
 		version_pos = Common["version"]["pos"];
 
@@ -79,7 +79,7 @@ namespace ms
 				vCanvasCount = 7;
 		}
 
-		nl::node CustomizeCharObj = nl::nx::Map["Obj"]["login.img"]["CustomizeChar"][class_map[classType]];
+		nl::node CustomizeCharObj = nl::nx::Map_Obj_015["login.img"]["CustomizeChar"][class_map[classType]];
 
 		int16_t genderHeight = board["genderHeight"];
 		int16_t avatarHeight = board["avatarHeight"];
@@ -990,7 +990,7 @@ namespace ms
 		shoeIndex = randomizer.next_int(shoes[female].size());
 		weaponIndex = randomizer.next_int(weapons[female].size());
 
-		newCharLook.set_body(skinColors[skinColorIndex]);
+		newCharLook.set_body(skinColors[skinColorIndex]);//���~
 		newCharLook.set_face(faces[female][faceIndex]);
 
 		if (hairColors_.size() > 0)
@@ -1025,7 +1025,7 @@ namespace ms
 	{
 		size_t color_count = 0, bottom_count = 0, cape_count = 0;
 
-		nl::node MakeCharInfo = nl::nx::Etc["MakeCharInfo.img"][classType];
+		nl::node MakeCharInfo = nl::nx::Etc_003["MakeCharInfo.img"][classType];
 
 		for (nl::node gender_node : MakeCharInfo)
 		{

@@ -18,6 +18,7 @@
 #include "Hair.h"
 
 #include <iostream>
+#include <numeric>
 
 #ifdef USE_NX
 #include <nlnx/nx.hpp>
@@ -27,7 +28,15 @@ namespace ms
 {
 	Hair::Hair(int32_t hairid, const BodyDrawInfo& drawinfo)
 	{
-		nl::node hairnode = nl::nx::Character["Hair"]["000" + std::to_string(hairid) + ".img"];
+		nl::node hairnode;
+		if (std::to_string(hairid)[0] == '3')
+		{
+		hairnode = nl::nx::Character_Hair_000["000" + std::to_string(hairid) + ".img"];
+		}
+		else
+		{
+		hairnode = nl::nx::Character_Hair_001["000" + std::to_string(hairid) + ".img"];
+		}
 
 		for (auto stance_iter : Stance::names)
 		{

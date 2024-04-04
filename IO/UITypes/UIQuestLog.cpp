@@ -29,8 +29,8 @@ namespace ms
 	{
 		tab = Buttons::TAB0;
 
-		nl::node close = nl::nx::UI["Basic.img"]["BtClose3"];
-		nl::node quest = nl::nx::UI["UIWindow2.img"]["Quest"];
+		nl::node close = nl::nx::UI_000["Basic.img"]["BtClose3"];
+		nl::node quest = nl::nx::UI_004["UIWindow2.img"]["Quest"];
 		nl::node list = quest["list"];
 
 		nl::node backgrnd = list["backgrnd"];

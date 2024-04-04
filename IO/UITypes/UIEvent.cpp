@@ -34,8 +34,8 @@ namespace ms
 		offset = 0;
 		event_count = 16;
 
-		nl::node main = nl::nx::UI["UIWindow2.img"]["EventList"]["main"];
-		nl::node close = nl::nx::UI["Basic.img"]["BtClose3"];
+		nl::node main = nl::nx::UI_004["UIWindow2.img"]["EventList"]["main"];
+		nl::node close = nl::nx::UI_000["Basic.img"]["BtClose3"];
 
 		nl::node backgrnd = main["backgrnd"];
 		Point<int16_t> bg_dimensions = Texture(backgrnd).get_dimensions();

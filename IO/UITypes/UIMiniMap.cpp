@@ -44,7 +44,7 @@ namespace ms
 		user_type = type;
 		simpleMode = Setting<MiniMapSimpleMode>::get().load();
 
-		nl::node UIWindow2 = nl::nx::UI["UIWindow2.img"];
+		nl::node UIWindow2 = nl::nx::UI_004["UIWindow2.img"];
 
 		std::string node = simpleMode ? "MiniMapSimpleMode" : "MiniMap";
 		MiniMap = UIWindow2[node];

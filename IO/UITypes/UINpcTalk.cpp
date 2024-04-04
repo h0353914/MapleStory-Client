@@ -33,7 +33,7 @@ namespace ms
 {
 	UINpcTalk::UINpcTalk() : offset(0), unitrows(0), rowmax(0), show_slider(false), draw_text(false), formatted_text(""), formatted_text_pos(0), timestep(0)
 	{
-		nl::node UtilDlgEx = nl::nx::UI["UIWindow2.img"]["UtilDlgEx"];
+		nl::node UtilDlgEx = nl::nx::UI_004["UIWindow2.img"]["UtilDlgEx"];
 
 		top = UtilDlgEx["t"];
 		fill = UtilDlgEx["c"];

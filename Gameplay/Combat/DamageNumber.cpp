@@ -191,7 +191,7 @@ namespace ms
 
 	void DamageNumber::init()
 	{
-		nl::node BasicEff = nl::nx::Effect["BasicEff.img"];
+		nl::node BasicEff = nl::nx::Effect_001["BasicEff.img"];
 
 		charsets[DamageNumber::Type::NORMAL].set(false, BasicEff["NoRed1"], Charset::Alignment::LEFT);
 		charsets[DamageNumber::Type::NORMAL].set(true, BasicEff["NoRed0"], Charset::Alignment::LEFT);

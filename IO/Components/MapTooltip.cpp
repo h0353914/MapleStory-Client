@@ -28,8 +28,8 @@ namespace ms
 	// TODO: Get number of available quests
 	MapTooltip::MapTooltip() : parent(Tooltip::Parent::NONE), title(""), description(""), fillwidth(0), fillheight(0)
 	{
-		nl::node Frame = nl::nx::UI["UIToolTip.img"]["Item"]["Frame2"];
-		nl::node WorldMap = nl::nx::UI["UIWindow2.img"]["ToolTip"]["WorldMap"];
+		nl::node Frame = nl::nx::UI_003["UIToolTip.img"]["Item"]["Frame2"];
+		nl::node WorldMap = nl::nx::UI_004["UIWindow2.img"]["ToolTip"]["WorldMap"];
 
 		frame = Frame;
 		cover = Frame["cover"];

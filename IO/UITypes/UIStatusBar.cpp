@@ -65,7 +65,7 @@ namespace ms
 		if (VWIDTH == 800)
 			stat += "800";
 
-		nl::node mainBar = nl::nx::UI["StatusBar3.img"]["mainBar"];
+		nl::node mainBar = nl::nx::UI_002["StatusBar3.img"]["mainBar"];
 		nl::node status = mainBar[stat];
 		nl::node EXPBar = mainBar["EXPBar"];
 		nl::node EXPBarRes = EXPBar[VWIDTH];

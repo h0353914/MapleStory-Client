@@ -34,7 +34,7 @@ namespace ms
 		attackspeed = static_cast<uint8_t>(src["attackSpeed"]);
 		attack = static_cast<uint8_t>(src["attack"]);
 
-		nl::node soundsrc = nl::nx::Sound["Weapon.img"][src["sfx"]];
+		nl::node soundsrc = nl::nx::Sound_040["Weapon.img"][src["sfx"]];
 
 		bool twosounds = soundsrc["Attack2"].data_type() == nl::node::type::audio;
 

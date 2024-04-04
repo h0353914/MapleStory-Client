@@ -43,7 +43,7 @@ namespace ms
 			typestr = std::to_string(type);
 		}
 
-		nl::node src = nl::nx::UI["ChatBalloon.img"][typestr];
+		nl::node src = nl::nx::UI_000["ChatBalloon.img"][typestr];
 
 		arrow = src["arrow"];
 		frame = src;
@@ -90,7 +90,7 @@ namespace ms
 
 	ChatBalloonHorizontal::ChatBalloonHorizontal()
 	{
-		nl::node Balloon = nl::nx::UI["Login.img"]["WorldNotice"]["Balloon"];
+		nl::node Balloon = nl::nx::UI_001["Login.img"]["WorldNotice"]["Balloon"];
 
 		arrow = Balloon["arrow"];
 		center = Balloon["c"];

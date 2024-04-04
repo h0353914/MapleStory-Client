@@ -41,7 +41,7 @@ namespace ms
 	{
 		std::string version_text = Configuration::get().get_version();
 		version = Text(Text::Font::A12B, Text::Alignment::LEFT, Color::Name::LEMONGRASS, "Ver. " + version_text);
-		version_pos = nl::nx::UI["Login.img"]["Common"]["version"]["pos"];
+		version_pos = nl::nx::UI_001["Login.img"]["Common"]["version"]["pos"];//¥¼ª¾
 
 		Point<int16_t> background_pos = Point<int16_t>(512, 384);
 		channelsrc_pos = Point<int16_t>(314, 217);
@@ -49,7 +49,7 @@ namespace ms
 		worldid = Setting<DefaultWorld>::get().load();
 		channelid = Setting<DefaultChannel>::get().load();
 
-		nl::node Login = nl::nx::UI["Login.img"];
+		nl::node Login = nl::nx::UI_001["Login.img"];
 		nl::node Common = Login["Common"];
 		nl::node WorldSelect = Login["WorldSelect"];
 		worldsrc = WorldSelect["BtWorld"]["release"];
@@ -58,7 +58,7 @@ namespace ms
 		uint8_t regionid = Setting<DefaultRegion>::get().load();
 		set_region(regionid);
 
-		nl::node WorldSelectMap = nl::nx::Map["Obj"]["login.img"]["WorldSelect"];
+		nl::node WorldSelectMap = nl::nx::Map_Obj_015["login.img"]["WorldSelect"];
 		sprites.emplace_back(WorldSelectMap["default"]["0"], background_pos);
 
 		std::vector<std::string> backgrounds = { "MapleLive" };

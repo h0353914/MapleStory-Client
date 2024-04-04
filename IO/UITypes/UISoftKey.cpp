@@ -32,7 +32,7 @@ namespace ms
 {
 	UISoftKey::UISoftKey(OkCallback ok_callback, CancelCallback cancel_callback, std::string tooltip_text, Point<int16_t> tooltip_pos) : UIElement(Point<int16_t>(216, 224), Point<int16_t>(0, 0)), ok_callback(ok_callback), cancel_callback(cancel_callback), tooltip_pos(tooltip_pos), highCase(false)
 	{
-		nl::node SoftKey = nl::nx::UI["Login.img"]["Common"]["SoftKey"];
+		nl::node SoftKey = nl::nx::UI_001["Login.img"]["Common"]["SoftKey"];
 		nl::node backgrnd = SoftKey["backgrnd"];
 
 		sprites.emplace_back(backgrnd);

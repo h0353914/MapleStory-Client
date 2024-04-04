@@ -47,7 +47,7 @@ namespace ms
 		version = Text(Text::Font::A12B, Text::Alignment::LEFT, Color::Name::LEMONGRASS, "Ver. " + version_text);
 		version_pos = nl::nx::UI["Login.img"]["Common"]["version"]["pos"];
 
-		nl::node Login = nl::nx::UI["Login.img"];
+		nl::node Login = nl::nx::UI_001["Login.img"];   
 		version_pos = Login["Common"]["version"]["pos"];
 
 		nl::node Title_new = Login["Title_new"];
@@ -57,7 +57,7 @@ namespace ms
 		check[false] = check_src["0"];
 		check[true] = check_src["1"];
 
-		sprites.emplace_back(nl::nx::Map001["Back"]["UI_login.img"]["back"]["0"], Point<int16_t>(512, 384));
+		sprites.emplace_back(nl::nx::Map_Back_014["UI_login.img"]["back"]["0"], Point<int16_t>(512, 384));
 		sprites.emplace_back(Title_new["backgrd"], title_pos);
 
 		nl::node Tab = Title_new["Tab"];

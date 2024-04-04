@@ -30,8 +30,8 @@ namespace ms
 	{
 		alternative_settings = false; // TODO: Get user's key settings type
 
-		nl::node JoyPad = nl::nx::UI["UIWindow.img"]["JoyPad"];
-		nl::node Basic = nl::nx::UI["Basic.img"];
+		nl::node JoyPad = nl::nx::UI_004["UIWindow.img"]["JoyPad"];
+		nl::node Basic = nl::nx::UI_000["Basic.img"];
 
 		backgrnd[true] = JoyPad["backgrnd_alternative"];
 		backgrnd[false] = JoyPad["backgrnd_classic"];

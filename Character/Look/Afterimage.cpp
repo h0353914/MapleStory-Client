@@ -36,7 +36,7 @@ namespace ms
 		}
 
 		if (!src)
-			src = nl::nx::Character["Afterimage"][name + ".img"][level / 10][stance_name];
+			src = nl::nx::Character_Afterimage_000[name + ".img"][level / 10][stance_name];
 
 		range = src;
 		firstframe = 0;

@@ -34,7 +34,7 @@ namespace ms
 		if (type != Type::DEFAULT)
 			combobox += std::to_string(type);
 
-		nl::node src = nl::nx::UI["Basic.img"][combobox];
+		nl::node src = nl::nx::UI_000["Basic.img"][combobox];
 
 		textures[Button::State::PRESSED][0] = src["pressed"][0];
 		textures[Button::State::PRESSED][1] = src["pressed"][1];

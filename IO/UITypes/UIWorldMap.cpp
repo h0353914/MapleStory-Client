@@ -31,8 +31,8 @@ namespace ms
 {
 	UIWorldMap::UIWorldMap() : UIDragElement<PosMAP>(), search_text_dim(Point<int16_t>(82, 14))
 	{
-		nl::node close = nl::nx::UI["Basic.img"]["BtClose3"];
-		nl::node WorldMap = nl::nx::UI["UIWindow2.img"]["WorldMap"];
+		nl::node close = nl::nx::UI_000["Basic.img"]["BtClose3"];
+		nl::node WorldMap = nl::nx::UI_004["UIWindow2.img"]["WorldMap"];
 		nl::node WorldMapSearch = WorldMap["WorldMapSearch"];
 		nl::node Border = WorldMap["Border"]["0"];
 		nl::node backgrnd = WorldMapSearch["backgrnd"];

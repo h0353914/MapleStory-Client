@@ -40,7 +40,7 @@ namespace ms
 
 		user_clicked = false;
 
-		nl::node Logo = nl::nx::UI["Logo.img"];
+		nl::node Logo = nl::nx::UI_001["Logo.img"];
 
 		Wizet = Logo["Wizet"];
 		WizetEnd = Logo["Wizet"]["28"];

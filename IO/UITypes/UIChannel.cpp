@@ -37,7 +37,7 @@ namespace ms
 		selected_channel = current_channel;
 		channel_count = 20; // TODO: Need to get total number of channels on world
 
-		nl::node Channel = nl::nx::UI["UIWindow2.img"]["Channel"];
+		nl::node Channel = nl::nx::UI_004["UIWindow2.img"]["Channel"];
 
 		nl::node backgrnd = Channel["backgrnd"];
 		Texture bg = backgrnd;

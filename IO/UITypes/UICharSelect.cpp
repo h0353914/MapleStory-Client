@@ -49,7 +49,7 @@ namespace ms
 		std::string version_text = Configuration::get().get_version();
 		version = Text(Text::Font::A12B, Text::Alignment::LEFT, Color::Name::LEMONGRASS, "Ver. " + version_text);
 
-		nl::node Login = nl::nx::UI["Login.img"];
+		nl::node Login = nl::nx::UI_001["Login.img"];
 		nl::node Common = Login["Common"];
 		version_pos = Common["version"]["pos"];
 
@@ -57,7 +57,7 @@ namespace ms
 		selected_page = selected_character / PAGESIZE;
 		page_count = std::ceil((double)slots / (double)PAGESIZE);
 
-		tab = nl::nx::UI["Basic.img"]["Cursor"]["18"]["0"];
+		tab = nl::nx::UI_000["Basic.img"]["Cursor"]["18"]["0"];
 		tab_move_pos = 0;
 
 		tab_map[0] = Buttons::BtSelect;
@@ -80,7 +80,7 @@ namespace ms
 		world_sprites.emplace_back(selectedWorld["name"][world]);
 		world_sprites.emplace_back(selectedWorld["ch"][channel_id]);
 
-		nl::node map = nl::nx::Map001["Back"]["UI_login.img"];
+		nl::node map = nl::nx::Map_Back_014["UI_login.img"];
 		nl::node back = map["back"];
 
 		sprites.emplace_back(back["1"], Point<int16_t>(512, 384));

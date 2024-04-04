@@ -30,7 +30,7 @@ namespace ms
 {
 	UIOptionMenu::UIOptionMenu() : UIDragElement<PosOPTIONMENU>(), selected_tab(0)
 	{
-		nl::node OptionMenu = nl::nx::UI["StatusBar3.img"]["OptionMenu"];
+		nl::node OptionMenu = nl::nx::UI_002["StatusBar3.img"]["OptionMenu"];
 		nl::node backgrnd = OptionMenu["backgrnd"];
 
 		sprites.emplace_back(backgrnd);

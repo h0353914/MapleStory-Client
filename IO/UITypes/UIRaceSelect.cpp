@@ -43,9 +43,9 @@ namespace ms
 	{
 		std::string version_text = Configuration::get().get_version();
 		version = Text(Text::Font::A12B, Text::Alignment::LEFT, Color::Name::LEMONGRASS, "Ver. " + version_text);
-		version_pos = nl::nx::UI["Login.img"]["Common"]["version"]["pos"];
+		version_pos = nl::nx::UI_001["Login.img"]["Common"]["version"]["pos"];
 
-		nl::node Login = nl::nx::UI["Login.img"];
+		nl::node Login = nl::nx::UI_001["Login.img"];
 		nl::node Common = Login["Common"];
 		nl::node RaceSelect = Login["RaceSelect_new"];
 
@@ -349,7 +349,7 @@ namespace ms
 
 	bool UIRaceSelect::check_name(std::string name) const
 	{
-		nl::node ForbiddenName = nl::nx::Etc["ForbiddenName.img"];
+		nl::node ForbiddenName = nl::nx::Etc_003["ForbiddenName.img"];
 
 		for (std::string forbiddenName : ForbiddenName)
 		{

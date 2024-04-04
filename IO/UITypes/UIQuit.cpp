@@ -34,7 +34,7 @@ namespace ms
 {
 	UIQuit::UIQuit(const CharStats& st) : screen_adj(212, 104), stats(st)
 	{
-		nl::node askReward = nl::nx::UI["UIWindow6.img"]["askReward"];
+		nl::node askReward = nl::nx::UI_006["UIWindow6.img"]["askReward"];
 		nl::node userLog = askReward["userLog"];
 		nl::node exp = userLog["exp"];
 		nl::node level = userLog["level"];

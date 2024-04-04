@@ -28,8 +28,8 @@ namespace ms
 	Body::Body(int32_t skin, const BodyDrawInfo& drawinfo)
 	{
 		std::string strid = string_format::extend_id(skin, 2);
-		nl::node bodynode = nl::nx::Character["000020" + strid + ".img"];
-		nl::node headnode = nl::nx::Character["000120" + strid + ".img"];
+		nl::node bodynode = nl::nx::Character_000["000020" + strid + ".img"];
+		nl::node headnode = nl::nx::Character_000["000120" + strid + ".img"];
 
 		for (auto iter : Stance::names)
 		{

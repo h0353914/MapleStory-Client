@@ -29,8 +29,8 @@ namespace ms
 {
 	void BodyDrawInfo::init()
 	{
-		nl::node bodynode = nl::nx::Character["00002000.img"];
-		nl::node headnode = nl::nx::Character["00012000.img"];
+		nl::node bodynode = nl::nx::Character_000["00002000.img"];
+		nl::node headnode = nl::nx::Character_000["00012000.img"];
 
 		for (nl::node stancenode : bodynode)
 		{

@@ -32,7 +32,7 @@ namespace ms
 		WOFFSET = VWIDTH / 2;
 		HOFFSET = VHEIGHT / 2;
 
-		nl::node backsrc = nl::nx::Map001["Back"];
+		nl::node backsrc = nl::nx::Map_Back_014;
 
 		animated = src["ani"].get_bool();
 		animation = backsrc[src["bS"] + ".img"][animated ? "ani" : "back"][src["no"]];

@@ -31,7 +31,7 @@ namespace ms
 {
 	UIChatBar::UIChatBar() : temp_view_x(0), temp_view_y(0), drag_direction(DragDirection::NONE), view_input(false), view_adjusted(false), position_adjusted(false)
 	{
-		nl::node ingame = nl::nx::UI["StatusBar3.img"]["chat"]["ingame"];
+		nl::node ingame = nl::nx::UI_002["StatusBar3.img"]["chat"]["ingame"];
 		nl::node input = ingame["input"];
 
 		nl::node view = ingame["view"];

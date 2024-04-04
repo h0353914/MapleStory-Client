@@ -37,7 +37,8 @@ namespace ms
 {
 	UIItemInventory::UIItemInventory(const Inventory& invent) : UIDragElement<PosINV>(), inventory(invent), ignore_tooltip(false), tab(InventoryType::Id::EQUIP), sort_enabled(true)
 	{
-		nl::node Item = nl::nx::UI["UIWindow2.img"]["Item"];
+
+		nl::node Item = nl::nx::UI_004["UIWindow2.img"]["Item"];
 		nl::node pos = Item["pos"];
 
 		slot_col = pos["slot_col"];
@@ -87,7 +88,7 @@ namespace ms
 		Point<int16_t> tab_pos5 = Texture(taben["5"]).get_origin() * -1;
 		Point<int16_t> tab_pos_adj = Point<int16_t>(9, 26);
 
-		nl::node close = nl::nx::UI["Basic.img"]["BtClose3"];
+		nl::node close = nl::nx::UI_000["Basic.img"]["BtClose3"];
 		buttons[Buttons::BT_CLOSE] = std::make_unique<MapleButton>(close);
 
 		buttons[Buttons::BT_TAB_EQUIP] = std::make_unique<TwoSpriteButton>(tabdis["0"], taben["0"], tab_pos0 - tab_pos_adj, Point<int16_t>(0, 0));

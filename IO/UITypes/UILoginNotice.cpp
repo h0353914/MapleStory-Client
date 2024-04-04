@@ -33,7 +33,7 @@ namespace ms
 	{
 		multiple = false;
 
-		nl::node Notice = nl::nx::UI["Login.img"]["Notice"];
+		nl::node Notice = nl::nx::UI_001["Login.img"]["Notice"];
 		nl::node backgrnd;
 
 		switch (message)
@@ -111,7 +111,7 @@ namespace ms
 
 	UIQuitConfirm::UIQuitConfirm()
 	{
-		nl::node notice = nl::nx::UI["Login.img"]["Notice"];
+		nl::node notice = nl::nx::UI_001["Login.img"]["Notice"];
 		nl::node backgrnd = notice["backgrnd"]["0"];
 
 		sprites.emplace_back(backgrnd);
@@ -157,7 +157,7 @@ namespace ms
 
 	UIClassConfirm::UIClassConfirm(uint16_t selected_class, bool unavailable, std::function<void()> okhandler) : okhandler(okhandler)
 	{
-		nl::node RaceSelect = nl::nx::UI["Login.img"]["RaceSelect_new"];
+		nl::node RaceSelect = nl::nx::UI_001["Login.img"]["RaceSelect_new"];
 		nl::node type = unavailable ? RaceSelect["deny"] : RaceSelect["confirm"];
 		nl::node backgrnd = type["backgrnd"];
 		nl::node race = type["race"][selected_class];
@@ -243,7 +243,7 @@ namespace ms
 
 	UIKeySelect::UIKeySelect(std::function<void(bool)> oh, bool l) : okhandler(oh), login(l)
 	{
-		nl::node KeyType = nl::nx::UI["UIWindow2.img"]["KeyConfig"]["KeyType"];
+		nl::node KeyType = nl::nx::UI_004["UIWindow2.img"]["KeyConfig"]["KeyType"];
 		nl::node backgrnd = KeyType["backgrnd"];
 
 		sprites.emplace_back(backgrnd);
@@ -305,7 +305,7 @@ namespace ms
 
 	UIKeyConfirm::UIKeyConfirm(bool alternate, std::function<void()> oh, bool l) : okhandler(oh), login(l)
 	{
-		nl::node alert = nl::nx::UI["UIWindow2.img"]["KeyConfig"]["KeyType"]["alert"];
+		nl::node alert = nl::nx::UI_004["UIWindow2.img"]["KeyConfig"]["KeyType"]["alert"];
 		nl::node background = alternate ? alert["alternate"] : alert["default"];
 
 		sprites.emplace_back(background);

@@ -27,7 +27,7 @@ namespace ms
 {
 	TextTooltip::TextTooltip()
 	{
-		nl::node Frame = nl::nx::UI["UIToolTip.img"]["Item"]["Frame2"];
+		nl::node Frame = nl::nx::UI_003["UIToolTip.img"]["Item"]["Frame2"];
 
 		frame = Frame;
 		cover = Frame["cover"];
