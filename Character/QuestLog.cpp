@@ -16,7 +16,7 @@
 //	along with this program.  If not, see <https://www.gnu.org/licenses/>.		//
 //////////////////////////////////////////////////////////////////////////////////
 #include "QuestLog.h"
-
+#include <string>
 namespace ms
 {
 	void QuestLog::add_started(int16_t qid, const std::string& qdata)
